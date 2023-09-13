@@ -1,7 +1,30 @@
 {
+  "name": "liaraapis",
+  "version": "1.0.0",
+  "description": "A project that is using Liara APIs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "axios": "^1.5.0",
     "dotenv": "^16.3.1",
-    "express": "^4.18.2"
-  }
+    "express": "^4.18.2",
+    "loadash": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoseinabedi/liaraApis.git"
+  },
+  "keywords": ["Liara", "Email APIs"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoseinabedi/liaraApis/issues"
+  },
+  "homepage": "https://github.com/hoseinabedi/liaraApis#readme"
 }
