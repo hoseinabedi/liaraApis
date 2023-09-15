@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
+require('dotenv').config();
 const router = require('./routes/liara');
+const PORT = process.env.PORT || 8000;
 
 app.use(express.json());
 
@@ -10,4 +12,4 @@ app.get('/', (req, res) => {
 
 app.use('/api/v1', router);
 
-app.listen(3000 , () => console.log("App is running on http://localhost:3000"));
+app.listen(PORT , () => console.log(`App is running on http://localhost:${PORT}`));
